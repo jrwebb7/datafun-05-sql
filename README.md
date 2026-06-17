@@ -4,6 +4,9 @@
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](./pyproject.toml)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
+Author: James Webb
+
+GitHub: https://github.com/jrwebb7
 > Professional Python project: relational data and SQL analytics.
 
 Data analytics requires a variety of skills.
@@ -162,25 +165,26 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ## DuckDB Example Output (Replace This with Yours and Describe)
 
 ```shell
-| INFO | P05 | RUN SQL query: C:\Repos\datafun\datafun-05-sql\sql\duckdb\case_retail_query_sales_by_category.sql
-| INFO | P05 | ====================================
-| INFO | P05 | case_retail_query_sales_by_category.sql
-| INFO | P05 | ====================================
-| INFO | P05 | product_category, sale_count, total_revenue, avg_sale_amount
-| INFO | P05 | Outdoors, 9, 3200.0, 355.56
-| INFO | P05 | Clothing, 10, 1375.0, 137.5
-| INFO | P05 | Food, 11, 652.0, 59.27
-| INFO | P05 |
-| INFO | P05 | RUN SQL query: C:\Repos\datafun\datafun-05-sql\sql\duckdb\case_retail_query_kpi_revenue.sql
-| INFO | P05 | ====================================
-| INFO | P05 | case_retail_query_kpi_revenue.sql
-| INFO | P05 | ====================================
-| INFO | P05 | store_id, store_name, city, region, sale_count, total_revenue, avg_sale_amount
-| INFO | P05 | S003, Central Plaza, Mankato, South, 10, 1868.0, 186.8
-| INFO | P05 | S001, North Market, Duluth, North, 10, 1834.0, 183.4
-| INFO | P05 | S002, Lakeside Shop, Ely, North, 10, 1525.0, 152.5
-| INFO | P05 | ========================
-| INFO | P05 | Executed successfully!
-| INFO | P05 | ========================
-| INFO | P05 | END main()
+2026-06-15 08:18:28 | INFO | P05 | case_retail_query_sales_by_category.sql
+
+product_category, sale_count, total_revenue, avg_sale_amount
+
+Outdoors, 9, 3200.0, 355.56
+Clothing, 10, 1375.0, 137.5
+Food, 11, 652.0, 59.27
+
+2026-06-15 08:18:28 | INFO | P05 | case_retail_query_kpi_revenue.sql
+
+store_id, store_name, city, region, sale_count, total_revenue, avg_sale_amount
+
+S003, Central Plaza, Mankato, South, 10, 1868.0, 186.8
+S001, North Market, Duluth, North, 10, 1834.0, 183.4
+S002, Lakeside Shop, Ely, North, 10, 1525.0, 152.5
+
+Executed successfully!
+END main()
 ```
+
+### Description
+
+The application successfully created and queried a retail database using SQLite. The output summarizes sales by product category and store location. The results show that the Outdoors category generated the highest revenue, while Central Plaza produced the highest total revenue among stores.
